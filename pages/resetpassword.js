@@ -33,7 +33,7 @@ const inter = Zen_Kaku_Gothic_Antique({ subsets: ['latin'], weight: "400" })
           });
   
           if (error) {
-            alert(`Error signing in: ${error.message}`);
+            alert(`Wystąpił błąd: ${error.message}`);
           }
         }
       };
@@ -55,10 +55,12 @@ const inter = Zen_Kaku_Gothic_Antique({ subsets: ['latin'], weight: "400" })
         }
   
         if (data) {
-          alert("Password has been updated successfully!");
+          alert("Udało się sustawić nowe hasło!");
+          window.location = './'
+
         }
       } catch (error) {
-        alert(`Error updating password: ${error.message}`);
+        alert(`Wystąpił błąd: ${error.message}`);
       }
     };
   
